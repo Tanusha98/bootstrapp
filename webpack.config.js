@@ -10,7 +10,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(scss)$/,
+        test: /\.(scss)$/,/\.(png|jpg|gif)$/,
         use: [{
           loader: 'style-loader', // inject CSS to page
         }, {
@@ -27,7 +27,10 @@ module.exports = {
           }
         }, {
           loader: 'sass-loader' // compiles Sass to CSS
-        }]
+        }],{
+	    loader: 'file-loader',
+            options: {}
+	}
       }
     ]
   },

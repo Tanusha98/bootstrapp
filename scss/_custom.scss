@@ -184,6 +184,11 @@ body{
         @include btnhover();
     }
 }
+.modal-content{
+    background: rgba(33,33,33,0.7);
+    width:auto;
+    padding:2vh;
+}
 .form-row, .form-group{
     color:antiquewhite;
     font-family: 'Work Sans', sans-serif;
@@ -198,6 +203,9 @@ body{
 .popups{
     padding:10vh;
     background-color: rgba(33,33,33,0.7);
+    .close{
+        font-size:2em;
+    }
 }
 
 footer{
